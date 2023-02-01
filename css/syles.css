@@ -10,7 +10,14 @@ body{
    background-color: rgb(20, 20, 20);
 }
 
+
+/*header para mobile no me funcionó y se me rompe completamente el archivo*/
+
+
 /* estilos del header*/
+
+
+    
 
 header{
     background-color: #18232B !important;
@@ -45,7 +52,11 @@ header img {
     align-items: center;   
 }
 
-
+/*hover: Creo que el bt está haciendo que no funcione, para la siguiente entrega espero no necesitar de bt o entender como es que las propiedades de hover y flex+grid puedan funcionar*/
+main h1:hover {
+    transform: scale (1.1);
+    text-shadow: #d4d4d4;
+}    
 
 /*En el index, el h1 no me queda centrado*/
 
