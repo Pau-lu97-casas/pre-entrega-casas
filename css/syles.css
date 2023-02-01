@@ -1,6 +1,9 @@
 /*estilos generales*/
+
  *{
-    margin:0%
+    margin:0%;
+    padding:0%;
+    
  }
 
 body{
@@ -10,27 +13,49 @@ body{
 /* estilos del header*/
 
 header{
-    background-color: #18232B;
-    height: 100px;
+    background-color: #18232B !important;
+    height: 60px; 
     color: #DDE4E6;
     font-size: 20px;
     font-weight: 300;
     color: #DDE4E6; 
     font-family: 'Droid Sans';
-    display: block
-     
-    
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;    
 }
 
-header img {
-   
-    float: left;
-    margin: 20px;
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    justify-content: flex-end;
+    align-items: center;
 }
+
+
+
+header img {
+    text-decoration: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;   
+}
+
+
 
 /*En el index, el h1 no me queda centrado*/
 
 main h1{
+    text-align: center;
+}
+
+main p{
+    padding: 60px;
+    display: flex;
     text-align: center;
 }
 
@@ -42,19 +67,6 @@ main {
     text-align:center
 }
 
-header nav ul Li{
-    list-style: none;
-    font-size: 20px;
-    font-weight: 300;
-    color: #DDE4E6; 
-    font-family: 'Droid Sans';
-    display: inline-block;
-    position:initial; 
-    padding: 30px;
-    text-align: left
-
-}
-
 
 
 
@@ -63,7 +75,11 @@ main img{
     margin: auto;
 }
 
-    
+ main ul{
+    padding: 60px;
+    text-align: left;
+
+ }   
 
 
 footer {
@@ -74,4 +90,10 @@ footer {
     color: #DDE4E6; 
     font-family: 'Droid Sans';
 
+}
+
+
+a {
+    text-decoration: none;
+    color: #DDE4E6;
 }
