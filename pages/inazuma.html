@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+     <!--Link de bt-->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <!--Link de MI CSS-->
     <link rel="stylesheet" href="../css/syles.css">
     <title>Inazuma</title>
@@ -23,16 +24,16 @@
         <nav>
             <ul>
                 <li>
-                    <a href="../index.html">Back to Teyvat</a>
+                    <a class="boton" href="../index.html">Back to Teyvat</a>
                    </li>
                 <li>
-                    <a href="../pages/mondstadt.html">Mondstadt</a>
+                    <a class="boton" href="../pages/mondstadt.html">Mondstadt</a>
                     </li>
                 <li>
-                    <a href="../pages/inazuma.html">Inazuma</a>
+                    <a class="boton" href="../pages/liyue.html">Liyue</a>
                     </li>
                 <li>
-                    <a href="../pages/sumeru.html">Sumeru</a>
+                    <a class="boton" href="../pages/sumeru.html">Sumeru</a>
                     </li>
             </ul>
         </nav>
@@ -43,14 +44,35 @@
 
         <h1>Inazuma</h1>
 
-        <p>Un archipiélago situado en el extremo oriente de Teyvat.
+        <p class="prologo">Un archipiélago situado en el extremo oriente de Teyvat.
             Encara tormentas perpetuas, adéntrate en la isla de las flores de cerezo, en sus playas, los imponentes acantilados y las solitarias montañas, y presencia la eternidad perseguida por Su Excelencia, la todapoderosa Narukami.</p>
 
-            <img src="../img/InazumaMapa.png" alt="Mapa de las islas de Inazuma">
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../img/inazuma-forest.png" class="d-block w-100" alt="Bosques de Inazuma">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../img/inazuma-isla.png" class="d-block w-100" alt="Una de las islas de Inazuma">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../img/inazuma-raiden.png" class="d-block w-100" alt="Hogar de la Raiden Shogun">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
 
             <h2>Curiosidades</h2>
 
-            <ul>
+            <ul class="curiosidades">
                 <Li>El Decreto Sakoku de Inazuma y la Captura de Visiones, hace un paralelismo a la Política Sakoku, de la vida real, aplicada durante el Shogunato Tokugawa Japonés, durante el periodo Edo</Li>
                 <Li>El Shogunato de Inazuma, la Entidad Controladora de la nación, es una referencia directa del mismo gobierno usado bajo el Shogunato Japonés.
                 </Li>
@@ -63,15 +85,15 @@
     
     <footer>
         <img src="../img/genshin_footer.png" alt="Logo de Genshin Impact">
-        <h4>"PlayStation Family Mark," "PS5 logo" and "PS4 logo" are registered trademarks or trademarks of Sony Interactive Entertainment Inc. </h4>
+        <h4 class="copiUno">"PlayStation Family Mark," "PS5 logo" and "PS4 logo" are registered trademarks or trademarks of Sony Interactive Entertainment Inc. </h4>
 
-        <h5>Epic, Epic Games, Epic Games Store, the Epic Games Store logo, and Epic Online Services are trademarks and/or registered trademarks of Epic Games. 
+        <h5 class="copiUno">Epic, Epic Games, Epic Games Store, the Epic Games Store logo, and Epic Online Services are trademarks and/or registered trademarks of Epic Games. 
             All other trademarks are the property of their respective owners</h5> 
             <a href="https://www.hoyoverse.com/" target="_blank">
                 <img src="../img/hoyoverse.png" alt="Logo oficial de Hoyoverse">
             </a>
             
-        <h3>Copyright © COGNOSPHERE. All Rights Reserved.</h3>
+        <h3 class="copiUno">Copyright © COGNOSPHERE. All Rights Reserved.</h3>
 
         
 

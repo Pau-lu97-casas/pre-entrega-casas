@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!--Link de bt-->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <!--Link de MI CSS--> 
     <link rel="stylesheet" href="../css/syles.css">
     <title>Sumeru</title>
@@ -19,16 +21,16 @@
 
             <ul>
                 <li>
-                    <a href="../index.html">Back to Teyvat</a>
+                    <a class="boton" href="../index.html">Back to Teyvat</a>
                    </li>
                 <li>
-                    <a href="../pages/mondstadt.html">Mondstadt</a>
+                    <a class="boton" href="../pages/mondstadt.html">Mondstadt</a>
                     </li>
                 <li>
-                    <a href="../pages/liyue.html">Liyue</a>
+                    <a class="boton" href="../pages/liyue.html">Liyue</a>
                     </li>
                 <li>
-                    <a href="../pages/inazuma.html">Inazuma</a>
+                    <a class="boton" href="../pages/inazuma.html">Inazuma</a>
                     </li>
             </ul>
         </nav>
@@ -39,14 +41,34 @@
 
     <main>
         <h1>Sumeru</h1>
-        <p>La nación de eruditos situada en el medio oeste de Teyvat.
+        <p class="prologo">La nación de eruditos situada en el medio oeste de Teyvat.
             Una tierra exótica en la que coexisten exuberantes bosques tropicales y áridos desiertos, donde crecen y se marchitan innumerables frutos de la sabiduría. Todo viajero que llegue a esta nación podrá adquirir valiosos conocimientos atravesando el bosque y subiendo los escalones que conducen hacia el conocimiento o adentrándose en el desierto y descubriendo sus antiguas ruinas.</p>
 
-            <img src="../img/sumeruMapa.png" alt="Mapa de la región de Sumeru">
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../img/sumeru-forest.jpg" class="d-block w-100" alt="Bosques de Sumeru">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../img/sumeru-place.jpg" class="d-block w-100" alt="Edificios de Sumeru">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../img/sumeru-desierto.jpg" class="d-block w-100" alt="Desierto de Sumeru">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
 
             <h2>Curiosidades</h2>
 
-            <ul>
+            <ul class="curiosidades">
                 <Li>Sumeru puede que se haya realizado tomando como inspiración Oriente Próximo y culturas del Sur de Asia.
                 </Li>
                 <Li>Sumeru es uno de los muchos nombres del Monte Meru, una montaña de cinco picos sagrada en la Cosmología Hindú, Jainista y Budista.</Li>
@@ -59,19 +81,19 @@
     
     <footer>
         <img src="../img/genshin_footer.png" alt="Logo de Genshin Impact">
-        <h4>"PlayStation Family Mark," "PS5 logo" and "PS4 logo" are registered trademarks or trademarks of Sony Interactive Entertainment Inc. </h4>
+        <h4 class="copiUno">"PlayStation Family Mark," "PS5 logo" and "PS4 logo" are registered trademarks or trademarks of Sony Interactive Entertainment Inc. </h4>
 
-        <h5>Epic, Epic Games, Epic Games Store, the Epic Games Store logo, and Epic Online Services are trademarks and/or registered trademarks of Epic Games. 
+        <h5 class="copiUno">Epic, Epic Games, Epic Games Store, the Epic Games Store logo, and Epic Online Services are trademarks and/or registered trademarks of Epic Games. 
             All other trademarks are the property of their respective owners</h5> 
             <a href="https://www.hoyoverse.com/" target="_blank">
                 <img src="../img/hoyoverse.png" alt="Logo oficial de Hoyoverse">
             </a>
             
-        <h3>Copyright © COGNOSPHERE. All Rights Reserved.</h3>
+        <h3 class="copiUno">Copyright © COGNOSPHERE. All Rights Reserved.</h3>
 
         
 
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>

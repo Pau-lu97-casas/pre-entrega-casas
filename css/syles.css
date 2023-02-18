@@ -1,27 +1,17 @@
-/*estilos generales*/
+/* reset */
 
- *{
-    margin:0%;
-    padding:0%;
-    
- }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 
-body{
-   background-color: rgb(20, 20, 20);
 }
 
+/*estilos de header*/
 
-/*header para mobile no me funcionó y se me rompe completamente el archivo*/
-
-
-/* estilos del header*/
-
-
-    
-
-header{
-    background-color: #18232B !important;
-    height: 60px; 
+.header-fondo{
+    background-color: #18232B;
+    height: 150px; 
     color: #DDE4E6;
     font-size: 20px;
     font-weight: 300;
@@ -29,82 +19,75 @@ header{
     font-family: 'Droid Sans';
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
     align-items: center;
-    padding: 40px;    
+    justify-content: space-between;
+    
 }
 
-header nav ul {
+.header-fondo nav ul{
     list-style: none;
     display: flex;
     gap: 30px;
     justify-content: flex-end;
     align-items: center;
-}
-
-
-
-header img {
-    text-decoration: none;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-start;
-    align-items: center;   
-}
-
-/*hover: Creo que el bt está haciendo que no funcione, para la siguiente entrega espero no necesitar de bt o entender como es que las propiedades de hover y flex+grid puedan funcionar*/
-main h1:hover {
-    transform: scale (1.1);
-    text-shadow: #d4d4d4;
-}    
-
-/*En el index, el h1 no me queda centrado*/
-
-main h1{
-    text-align: center;
-}
-
-main p{
-    padding: 60px;
-    display: flex;
-    text-align: center;
-}
-
-main {
-    font-size: 15px;
-    font-weight: lighter;
-    color: #DDE4E6; 
-    font-family: 'Droid Sans';
-    text-align:center
-}
-
-
-
-
-main img{
-    display: block;
-    margin: auto;
-}
-
- main ul{
-    padding: 60px;
-    text-align: left;
-
- }   
-
-
-footer {
+    margin: 20px;
+    margin-right: 40px;
     
-    font-size: 15px;
-    font-weight: lighter;
-    text-align: center;
-    color: #DDE4E6; 
-    font-family: 'Droid Sans';
+}
+
+.header-fondo img{
+    margin-left: 40px;
+    
 
 }
 
-
-a {
+.header-fondo a{
     text-decoration: none;
     color: #DDE4E6;
+}
+
+.boton:hover {
+    box-shadow: inset 0 0 20px rgba(49, 138, 172, 0.5), 0 0 20px rgba(49, 138, 172, 0.4);
+    outline-color: rgba(49, 138, 172, 0);
+    outline-offset: 80px;
+    text-shadow: 1px 1px 6px #fff;
+    
+  }
+
+/*estilos de main*/
+
+main{
+    background-image: linear-gradient(black, #131313);
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    text-align: center;
+    color: #DDE4E6;
+}
+
+.prologo{
+    margin: 40px;
+}
+
+.curiosidades{
+    list-style: none;
+    text-align: justify;
+    margin-left : 40px;
+    margin-right: 45px;
+}
+
+/*estilos de footer*/
+
+footer{
+    background-color: #010001;
+    font-size: 10px;
+    font-weight: lighter;
+    text-align: center;
+    color: #DDE4E6; 
+    font-family: 'Droid Sans';
+
+}
+
+.copiUno{
+    font-size: 15px;
 }
