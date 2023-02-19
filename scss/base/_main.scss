@@ -1,0 +1,28 @@
+//estilos de main
+
+main{
+    background-image: linear-gradient(black, #131313);
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    color: $fuente-princ;
+    h1{
+        margin-top: 3em; 
+    }
+    img{
+        width: 100%;
+    }
+    .prologo{
+        margin: 40px;
+
+    }
+    .curiosidades{
+        list-style: none;
+        text-align: justify;
+        margin-left : 40px;
+        margin-right: 45px;
+    }
+    
+}

@@ -1,170 +1,100 @@
-/* reset */
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
-}
-
-/*estilos de header para deskstop*/
-
-.header-fondo{
-    background-color: #18232B;
-    height: 150px; 
-    color: #DDE4E6;
-    font-size: 20px;
-    font-weight: 300;
-    color: #DDE4E6; 
-    font-family: 'Droid Sans';
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: space-between;
-    
-}
-
-.header-fondo nav ul{
+header .header-fondo {
+  background-color: #18232B;
+  height: 150px;
+  font-size: 20px;
+  font-weight: 300;
+  color: #DDE4E6;
+  font-family: 'Droid Sans';
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between; }
+  header .header-fondo .dropdown {
+    display: none; }
+  header .header-fondo nav ul {
     list-style: none;
     display: flex;
     gap: 30px;
     justify-content: flex-end;
     align-items: center;
     margin: 20px;
-    margin-right: 40px;
-    
-}
-
-
-.header-fondo .dropdown{
-    display: none;
-}
-
-/*media para tablet y mobile*/
+    margin-right: 40px; }
+    header .header-fondo nav ul a {
+      text-decoration: none;
+      color: #DDE4E6; }
+      header .header-fondo nav ul a .boton:hoover {
+        box-shadow: inset 0 0 20px rgba(49, 138, 172, 0.5), 0 0 20px rgba(49, 138, 172, 0.4);
+        outline-color: rgba(49, 138, 172, 0);
+        outline-offset: 80px;
+        text-shadow: 1px 1px 6px #fff; }
+  header .header-fondo img {
+    margin-left: 40px; }
 
 @media screen and (max-width: 786px) {
-
-    header img{
-        width: 15%;
-        margin-left: 1em;
-        margin-right: 1em;
-    }
-    .header-fondo nav ul{
-        display: none;
-    }
-    
-    .header-fondo .dropdown {
-        display: block;
-        position: relative;
-        margin-right: 2em;
-        padding: auto;
-      }
-      .dropdown button{
-        font-size: 15px;
-        font-weight: 300;
-        font-family: 'Droid Sans';
-        padding: 3px;
-        padding-left: 10px;
-        padding-right: 4.5rem;
-      }
-      .dropdown-content {
-        display: none;
-        position: absolute;
-        width: 100%;
-        padding: auto;
-        overflow: auto;
-        box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
-      }
-      .dropdown:hover .dropdown-content {
-        display: flex;
-        flex-direction: column;
-        
-      }
-      .dropdown-content a {
+  header img {
+    width: 15%;
+    margin-left: 1em;
+    margin-right: 1em; }
+  header nav ul {
+    display: none; }
+  header .dropdown {
+    display: block;
+    position: relative;
+    margin-right: 2em;
+    padding: auto; }
+    header .dropdown button {
+      font-size: 15px;
+      font-weight: 300;
+      font-family: 'Droid Sans';
+      padding: 3px;
+      padding-left: 10px;
+      padding-right: 4.5rem; }
+    header .dropdown .dropdown-content {
+      display: none;
+      position: absolute;
+      width: 100%;
+      padding: auto;
+      overflow: auto;
+      box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.4); }
+      header .dropdown .dropdown-content a {
         font-size: 15px;
         position: relative;
         display: flexbox;
         color: #000000;
         padding: .2em;
-        text-decoration: none;
-      }
-      .dropdown-content a:hover {
-        box-shadow: inset 0 0 20px rgba(49, 138, 172, 0.5), 0 0 20px rgba(49, 138, 172, 0.4);
-        outline-color: rgba(49, 138, 172, 0);
-        outline-offset: 80px;
-        text-shadow: 1px 1px 6px #fff;
-      }
-}
+        text-decoration: none; }
+        header .dropdown .dropdown-content a a:hoover {
+          box-shadow: inset 0 0 20px rgba(49, 138, 172, 0.5), 0 0 20px rgba(49, 138, 172, 0.4);
+          outline-color: rgba(49, 138, 172, 0);
+          outline-offset: 80px;
+          text-shadow: 1px 1px 6px #fff; } }
 
-
-
-.header-fondo img{
-    margin-left: 40px;
-    
-
-}
-
-.header-fondo a{
-    text-decoration: none;
-    color: #DDE4E6;
-}
-
-.boton:hover {
-    box-shadow: inset 0 0 20px rgba(49, 138, 172, 0.5), 0 0 20px rgba(49, 138, 172, 0.4);
-    outline-color: rgba(49, 138, 172, 0);
-    outline-offset: 80px;
-    text-shadow: 1px 1px 6px #fff;
-    
-}
-
-
-/*estilos de main*/
-
-main{
-    background-image: linear-gradient(black, #131313);
-    display: flex;
-    flex-flow: column;
-    flex-wrap: wrap;
-    align-items: center;
-    text-align: center;
-    color: #DDE4E6;
-}
-
-main h1{
-    margin-top: 3em;
-
-}
-main img{
-    width: 100%;
-}
-
-.prologo{
-    margin: 40px;
-}
-
-.curiosidades{
+main {
+  background-image: linear-gradient(black, #131313);
+  display: flex;
+  flex-flow: column;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  color: #DDE4E6; }
+  main h1 {
+    margin-top: 3em; }
+  main img {
+    width: 100%; }
+  main .prologo {
+    margin: 40px; }
+  main .curiosidades {
     list-style: none;
     text-align: justify;
-    margin-left : 40px;
-    margin-right: 45px;
-}
+    margin-left: 40px;
+    margin-right: 45px; }
 
-/*estilos de footer*/
-
-footer{
-    background-color: #010001;
-    font-size: 10px;
-    font-weight: lighter;
-    text-align: center;
-    color: #DDE4E6; 
-    font-family: 'Droid Sans';
-
-}
-
-.copiUno{
-    font-size: 15px;
-}
-
-
-
-
+footer {
+  background-color: #010001;
+  font-size: 10px;
+  font-weight: lighter;
+  text-align: center;
+  color: #DDE4E6;
+  font-family: 'Droid Sans'; }
+  footer .copiUno {
+    font-size: 15px; }
